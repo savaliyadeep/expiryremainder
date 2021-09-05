@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>Companies</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row" style="background-color: #a3c2c2;">  
+        <div class="col-2">
+          <img src="image/logo.jpg" width="150px">
+        </div>
+        <div class="col-2">
+          <form style="padding-top: 2rem;">
+            <input type="text" placeholder="Quick Search">
+          </form>
+        </div>
+        <div class="col-3"></div>
+        <div id="myModal" class="modal fade right">
+            <div class="modal-dialog" align="center">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Notification</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;<span class="sr-only">Close</span></button>
+                </div>
+                <div class="modal-body">
+                  <img src="image/bell.png">
+                  <p>No notifications yet</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="col-1" style="padding-top: 2rem;">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn" onclick="location.href='rem.html'"><img src="image/plus.png" width="25px" data-toggle="tooltip" data-placement="bottom" title="New Reminder"></button>
+            <button type="button" class="btn" data-toggle="modal" data-target="#myModal"><img src="image/bell_icon.png" width="25px" data-toggle="tooltip" data-placement="bottom" title="Show Notification"></button>
+          </div>
+        </div>
+        <div class="col-2" style="padding-top: 2rem;">
+            <div class="dropdown">
+              <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Manage Companies
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Default Company</a>
+                <a class="dropdown-item" href="companies.html">Manage Companies..</a>
+              </div>
+            </div>
+        </div>
+        <div id="myModal1" class="modal fade right">
+            <div class="modal-dialog" align="center">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" align="left">Feedback Form</h5>
+                  <button type="button" class="close" data-dismiss="modal">&times;<span class="sr-only">Close</span></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <h2 align="left">Please share your experience with Notify</h2><br>
+                    <div class="form-group" align="left">
+                      <label><h4>Does Notify help you achieve your goals?</h4></label> 
+                      <div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio" id="radio_0" type="radio" class="custom-control-input" value="yes"> 
+                            <label for="radio_0" class="custom-control-label">Yes</label>
+                          </div>
+                        </div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio" id="radio_1" type="radio" class="custom-control-input" value="no"> 
+                            <label for="radio_1" class="custom-control-label">No</label>
+                          </div>
+                        </div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio" id="radio_2" type="radio" class="custom-control-input" value="don't know"> 
+                            <label for="radio_2" class="custom-control-label">Don't Know</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group" align="left">
+                      <label><h4>Ease of use</h4></label> 
+                      <div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio1" id="radio1_0" type="radio" class="custom-control-input" value=""> 
+                            <label for="radio1_0" class="custom-control-label">Very Satisfied</label>
+                          </div>
+                        </div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio1" id="radio1_1" type="radio" class="custom-control-input" value=""> 
+                            <label for="radio1_1" class="custom-control-label">Somewhat Satisfied</label>
+                          </div>
+                        </div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio1" id="radio1_2" type="radio" class="custom-control-input" value=""> 
+                            <label for="radio1_2" class="custom-control-label">Neutral</label>
+                          </div>
+                        </div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio1" id="radio1_3" type="radio" class="custom-control-input" value=""> 
+                            <label for="radio1_3" class="custom-control-label">Somewhat Unsatisfied</label>
+                          </div>
+                        </div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio1" id="radio1_4" type="radio" class="custom-control-input" value=""> 
+                            <label for="radio1_4" class="custom-control-label">Very Unsatisfied</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group" align="left">
+                      <label><h4>Value for money</h4></label> 
+                      <div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio2" id="radio2_0" type="radio" class="custom-control-input" value="rabbit"> 
+                            <label for="radio2_0" class="custom-control-label">Very Satisfied</label>
+                          </div>
+                        </div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio2" id="radio2_1" type="radio" class="custom-control-input" value="duck"> 
+                            <label for="radio2_1" class="custom-control-label">Somewhat Satisfied</label>
+                          </div>
+                        </div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio2" id="radio2_2" type="radio" class="custom-control-input" value="fish"> 
+                            <label for="radio2_2" class="custom-control-label">Neuteal</label>
+                          </div>
+                        </div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio2" id="radio2_3" type="radio" class="custom-control-input" value=""> 
+                            <label for="radio2_3" class="custom-control-label">Somewhat Unsatisfied</label>
+                          </div>
+                        </div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio2" id="radio2_4" type="radio" class="custom-control-input" value=""> 
+                            <label for="radio2_4" class="custom-control-label">Very Unsatisfied</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group" align="left">
+                      <label for="textarea"><h4>What is your favorite tool or portion of Noyify?</h4></label> 
+                      <textarea id="textarea" name="textarea" cols="40" rows="2" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group" align="left">
+                      <label for="textarea1"><h4>What would you improve if you could?</h4></label> 
+                      <textarea id="textarea1" name="textarea1" cols="40" rows="2" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group" align="left">
+                      <label><h4>How likely is it that you would recommend us to a friend or colleague?</h4></label> 
+                      <div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input name="radio3" id="radio3_0" type="radio" class="custom-control-input" value="rabbit"> 
+                          <label for="radio3_0" class="custom-control-label">1</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input name="radio3" id="radio3_1" type="radio" class="custom-control-input" value="duck"> 
+                          <label for="radio3_1" class="custom-control-label">2</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input name="radio3" id="radio3_2" type="radio" class="custom-control-input" value="fish"> 
+                          <label for="radio3_2" class="custom-control-label">3</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input name="radio3" id="radio3_3" type="radio" class="custom-control-input" value=""> 
+                          <label for="radio3_3" class="custom-control-label">4</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input name="radio3" id="radio3_4" type="radio" class="custom-control-input" value=""> 
+                          <label for="radio3_4" class="custom-control-label">5</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input name="radio3" id="radio3_5" type="radio" class="custom-control-input" value=""> 
+                          <label for="radio3_5" class="custom-control-label">6</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input name="radio3" id="radio3_6" type="radio" class="custom-control-input" value=""> 
+                          <label for="radio3_6" class="custom-control-label">7</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input name="radio3" id="radio3_7" type="radio" class="custom-control-input" value=""> 
+                          <label for="radio3_7" class="custom-control-label">8</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input name="radio3" id="radio3_8" type="radio" class="custom-control-input" value=""> 
+                          <label for="radio3_8" class="custom-control-label">9</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input name="radio3" id="radio3_9" type="radio" class="custom-control-input" value=""> 
+                          <label for="radio3_9" class="custom-control-label">10 Very Likely</label>
+                        </div>
+                      </div>
+                    </div> 
+                    <div class="form-group">
+                      <button name="submit" type="submit" class="btn btn-primary">send feedback</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="col-2" style="padding-top: 2rem;">
+          <div class="dropdown">
+            <button type="button" class="btn" style="color: white;" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img class="rounded-circle" src="image/icon-user-default.png" width="25px">Dark Eagle
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="settings.html">User Settings</a>
+              <a class="dropdown-item" href="sub.html">My Subscription</a>
+              <a class="dropdown-item" href="con.html">Contact Support</a>
+              <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal1">Give Us Feedback</a><hr>
+              <a class="dropdown-item" href="login.html">Log Out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <table class="table table-hover" style="background-color:lightgray;">
+              <tr onclick="location.href='dashboard.html'">
+                <th>Dashboard</th>
+              </tr>
+              <tr onclick="location.href='reminder.html'">
+                <th>Reminders</th>
+              </tr>
+              <tr onclick="location.href='explorer.html'">
+                <th>Explorer</th>
+              </tr>
+              <tr onclick="location.href='drive.html'">
+                <th>Drive</th>
+              </tr>
+              <tr onclick="location.href='calender.html'">
+                <th>Calendar</th>
+              </tr>
+              <tr onclick="location.href='contacts.html'">
+                <th>Contacts</th>
+              </tr>
+              <tr onclick="location.href='users.html'">
+                <th>Users</th>
+              </tr>
+              <tr style="background-color:white;" onclick="location.href='companies.html'">
+                <th>Companies</th>
+              </tr>
+              <tr onclick="location.href='settings.html'">
+                <th>Settings</th>
+              </tr>
+          </table>
+        </div>
+        <div class="col">
+          <div class="row" style="padding-top:1em;">
+            <div class="col">
+              <img src="image/home.png" width="15px"> / companies
+            </div>
+          </div><hr>
+          <table class="table border">
+            <thead>
+              <tr>
+                <th><img src="image/building.png" width="20px"> companies</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <table class="table">
+                    <tr>
+                      <th>Default</th>
+                      <th>Company Name</th>
+                      <th>Documets Limit</th>
+                      <th>Documets Usesd/th>
+                      <th>Contacts Limit</th>
+                      <th>Contacts Used</th>
+                      <th>Storage Limit</th>
+                      <th>Storage Used</th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td><img src="image/right.png" width="20px"></td>
+                      <td>Default Company</td>
+                      <td>2000</td>
+                      <td>0</td>
+                      <td>1000</td>
+                      <td>1</td>
+                      <td>50</td>
+                      <td>0.00</td>
+                      <td><img src="image/edit.png" width="15px" data-toggle="tooltip" data-placement="bottom" title="Edit Company"> <img src="image/delete.png" width="15px" data-toggle="tooltip" data-placement="bottom" title="Delete Company"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div align="left">
+                    <h5 style="color: rgb(61, 166, 252);">
+                      <img src="image/plus (1).png" width="25px">Add Company
+                    </h5>
+                  </div>
+                  <div class="form-group" align="right">
+                <button name="submit" type="submit" class="btn btn-primary">save</button>
+              </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

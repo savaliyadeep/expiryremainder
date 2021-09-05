@@ -1,0 +1,1272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>Settings</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row" style="background-color: #a3c2c2;"> 
+        <div class="col-2">
+          <img src="image/logo.jpg" width="150px"> 
+        </div>
+        <div class="col-2">
+          <form style="padding-top: 2rem;">
+            <input type="text" placeholder="Quick Search">
+          </form>
+        </div>
+        <div class="col-3"></div>
+        <div id="myModal" class="modal fade right">
+            <div class="modal-dialog" align="center">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Notification</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;<span class="sr-only">Close</span></button>
+                </div>
+                <div class="modal-body">
+                  <img src="image/bell.png">
+                  <p>No notifications yet</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="col-1" style="padding-top: 2rem;">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn" onclick="location.href='rem.html'"><img src="image/plus.png" width="25px" data-toggle="tooltip" data-placement="bottom" title="New Reminder"></button>
+            <button type="button" class="btn" data-toggle="modal" data-target="#myModal"><img src="image/bell_icon.png" width="25px" data-toggle="tooltip" data-placement="bottom" title="Show Notification"></button>
+          </div>
+        </div>
+        <div class="col-2" style="padding-top: 2rem;">
+            <div class="dropdown">
+              <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Default Company
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Default Company</a>
+                <a class="dropdown-item" href="companies.html">Manage Companies..</a>
+              </div>
+            </div>
+        </div>
+        <div id="myModal1" class="modal fade right">
+            <div class="modal-dialog" align="center">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" align="left">Feedback Form</h5>
+                  <button type="button" class="close" data-dismiss="modal">&times;<span class="sr-only">Close</span></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <h2 align="left">Please share your experience with Notify</h2><br>
+                    <div class="form-group" align="left">
+                      <label><h4>Does Notify help you achieve your goals?</h4></label> 
+                      <div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio" id="radio_0" type="radio" class="custom-control-input" value="yes"> 
+                            <label for="radio_0" class="custom-control-label">Yes</label>
+                          </div>
+                        </div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio" id="radio_1" type="radio" class="custom-control-input" value="no"> 
+                            <label for="radio_1" class="custom-control-label">No</label>
+                          </div>
+                        </div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio" id="radio_2" type="radio" class="custom-control-input" value="don't know"> 
+                            <label for="radio_2" class="custom-control-label">Don't Know</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group" align="left">
+                      <label><h4>Ease of use</h4></label> 
+                      <div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio1" id="radio1_0" type="radio" class="custom-control-input" value=""> 
+                            <label for="radio1_0" class="custom-control-label">Very Satisfied</label>
+                          </div>
+                        </div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio1" id="radio1_1" type="radio" class="custom-control-input" value=""> 
+                            <label for="radio1_1" class="custom-control-label">Somewhat Satisfied</label>
+                          </div>
+                        </div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio1" id="radio1_2" type="radio" class="custom-control-input" value=""> 
+                            <label for="radio1_2" class="custom-control-label">Neutral</label>
+                          </div>
+                        </div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio1" id="radio1_3" type="radio" class="custom-control-input" value=""> 
+                            <label for="radio1_3" class="custom-control-label">Somewhat Unsatisfied</label>
+                          </div>
+                        </div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio1" id="radio1_4" type="radio" class="custom-control-input" value=""> 
+                            <label for="radio1_4" class="custom-control-label">Very Unsatisfied</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group" align="left">
+                      <label><h4>Value for money</h4></label> 
+                      <div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio2" id="radio2_0" type="radio" class="custom-control-input" value="rabbit"> 
+                            <label for="radio2_0" class="custom-control-label">Very Satisfied</label>
+                          </div>
+                        </div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio2" id="radio2_1" type="radio" class="custom-control-input" value="duck"> 
+                            <label for="radio2_1" class="custom-control-label">Somewhat Satisfied</label>
+                          </div>
+                        </div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio2" id="radio2_2" type="radio" class="custom-control-input" value="fish"> 
+                            <label for="radio2_2" class="custom-control-label">Neuteal</label>
+                          </div>
+                        </div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio2" id="radio2_3" type="radio" class="custom-control-input" value=""> 
+                            <label for="radio2_3" class="custom-control-label">Somewhat Unsatisfied</label>
+                          </div>
+                        </div>
+                        <div class="custom-controls-stacked">
+                          <div class="custom-control custom-radio">
+                            <input name="radio2" id="radio2_4" type="radio" class="custom-control-input" value=""> 
+                            <label for="radio2_4" class="custom-control-label">Very Unsatisfied</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group" align="left">
+                      <label for="textarea"><h4>What is your favorite tool or portion of Noyify?</h4></label> 
+                      <textarea id="textarea" name="textarea" cols="40" rows="2" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group" align="left">
+                      <label for="textarea1"><h4>What would you improve if you could?</h4></label> 
+                      <textarea id="textarea1" name="textarea1" cols="40" rows="2" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group" align="left">
+                      <label><h4>How likely is it that you would recommend us to a friend or colleague?</h4></label> 
+                      <div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input name="radio3" id="radio3_0" type="radio" class="custom-control-input" value="rabbit"> 
+                          <label for="radio3_0" class="custom-control-label">1</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input name="radio3" id="radio3_1" type="radio" class="custom-control-input" value="duck"> 
+                          <label for="radio3_1" class="custom-control-label">2</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input name="radio3" id="radio3_2" type="radio" class="custom-control-input" value="fish"> 
+                          <label for="radio3_2" class="custom-control-label">3</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input name="radio3" id="radio3_3" type="radio" class="custom-control-input" value=""> 
+                          <label for="radio3_3" class="custom-control-label">4</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input name="radio3" id="radio3_4" type="radio" class="custom-control-input" value=""> 
+                          <label for="radio3_4" class="custom-control-label">5</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input name="radio3" id="radio3_5" type="radio" class="custom-control-input" value=""> 
+                          <label for="radio3_5" class="custom-control-label">6</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input name="radio3" id="radio3_6" type="radio" class="custom-control-input" value=""> 
+                          <label for="radio3_6" class="custom-control-label">7</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input name="radio3" id="radio3_7" type="radio" class="custom-control-input" value=""> 
+                          <label for="radio3_7" class="custom-control-label">8</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input name="radio3" id="radio3_8" type="radio" class="custom-control-input" value=""> 
+                          <label for="radio3_8" class="custom-control-label">9</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input name="radio3" id="radio3_9" type="radio" class="custom-control-input" value=""> 
+                          <label for="radio3_9" class="custom-control-label">10 Very Likely</label>
+                        </div>
+                      </div>
+                    </div> 
+                    <div class="form-group">
+                      <button name="submit" type="submit" class="btn btn-primary">send feedback</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="col-2" style="padding-top: 2rem;">
+          <div class="dropdown">
+            <button type="button" class="btn" style="color: white;" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img class="rounded-circle" src="image/icon-user-default.png" width="25px">Dark Eagle
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="settings.html">User Settings</a>
+              <a class="dropdown-item" href="sub.html">My Subscription</a>
+              <a class="dropdown-item" href="con.html">Contact Support</a>
+              <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal1">Give Us Feedback</a><hr>
+              <a class="dropdown-item" href="login.html">Log Out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <table class="table table-hover" style="background-color:lightgray;">
+              <tr onclick="location.href='dashboard.html'">
+                <th>Dashboard</th>
+              </tr>
+              <tr onclick="location.href='reminder.html'">
+                <th>Reminders</th>
+              </tr>
+              <tr onclick="location.href='explorer.html'">
+                <th>Explorer</th>
+              </tr>
+              <tr onclick="location.href='drive.html'">
+                <th>Drive</th>
+              </tr>
+              <tr onclick="location.href='calender.html'">
+                <th>Calendar</th>
+              </tr>
+              <tr onclick="location.href='contacts.html'">
+                <th>Contacts</th>
+              </tr>
+              <tr onclick="location.href='users.html'">
+                <th>Users</th>
+              </tr>
+              <tr onclick="location.href='companies.html'">
+                <th>Companies</th>
+              </tr>
+              <tr style="background-color:white;" onclick="location.href='settings.html'">
+                <th>Settings</th>
+              </tr>
+          </table>
+        </div>
+        <div class="col">
+          <div class="row" style="padding-top:1em;">
+            <div class="col">
+              <img src="image/home.png" width="15px"> / settings
+            </div>
+          </div><hr>
+          <div class="card text-center">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="settings.html" style="color:black;">General</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ser.html" style="color:black;">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="rem.html" style="color:black;">Reminders</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sub.html" style="color:black;">Subscription</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="com.html" style="color:black;">Company info</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <table>
+                    <tr>
+                      <th class="col-md-5" style="text-align:right;">Timezone</th>
+                      <td>
+                        <select class="form-control" id="timezone" name="timezone">
+                                            <option value="770">(GMT +00:00) Swansea</option>
+                                            <option value="266">(GMT +00:00) Croydon</option>
+                                            <option value="778">(GMT +00:00) Penarth</option>
+                                            <option value="268">(GMT +00:00) Viana do Castelo</option>
+                                            <option value="782">(GMT +00:00) Gloucester</option>
+                                            <option value="271">(GMT +00:00) Glasgow</option>
+                                            <option value="21">(GMT +00:00) London</option>
+                                            <option value="795">(GMT +00:00) Clapham</option>
+                                            <option value="289">(GMT +00:00) Havant</option>
+                                            <option value="320">(GMT +00:00) Didcot</option>
+                                            <option value="329">(GMT +00:00) Dublin</option>
+                                            <option value="841">(GMT +00:00) Bamako</option>
+                                            <option value="91">(GMT +00:00) Accra</option>
+                                            <option value="350">(GMT +00:00) Solihull</option>
+                                            <option value="355">(GMT +00:00) Peterborough</option>
+                                            <option value="617">(GMT +00:00) Kensington</option>
+                                            <option value="365">(GMT +00:00) Reading</option>
+                                            <option value="622">(GMT +00:00) Bootle</option>
+                                            <option value="632">(GMT +00:00) Ealing</option>
+                                            <option value="385">(GMT +00:00) Shotts</option>
+                                            <option value="645">(GMT +00:00) Newcastle upon Tyne</option>
+                                            <option value="653">(GMT +00:00) Birr</option>
+                                            <option value="655">(GMT +00:00) Littlehampton</option>
+                                            <option value="656">(GMT +00:00) Guildford</option>
+                                            <option value="660">(GMT +00:00) Gravesend</option>
+                                            <option value="667">(GMT +00:00) Watford</option>
+                                            <option value="670">(GMT +00:00) Telford</option>
+                                            <option value="687">(GMT +00:00) Ellesmere Port</option>
+                                            <option value="694">(GMT +00:00) Kings Hill</option>
+                                            <option value="698">(GMT +00:00) Surbiton</option>
+                                            <option value="702">(GMT +00:00) Crowborough</option>
+                                            <option value="712">(GMT +00:00) East Grinstead</option>
+                                            <option value="714">(GMT +00:00) Matlock</option>
+                                            <option value="214">(GMT +00:00) Crawley</option>
+                                            <option value="215">(GMT +00:00) Oxford</option>
+                                            <option value="732">(GMT +00:00) Ipswich</option>
+                                            <option value="734">(GMT +00:00) Milton Keynes</option>
+                                            <option value="742">(GMT +00:00) Islington</option>
+                                            <option value="756">(GMT +00:00) Kildare</option>
+                                            <option value="759">(GMT +00:00) Balham</option>
+                                            <option value="248">(GMT +00:00) Mayfair</option>
+                                            <option value="762">(GMT +00:00) Warrington</option>
+                                            <option value="253">(GMT +00:00) Great Yarmouth</option>
+                                            <option value="512">(GMT +01:00) Leeds</option>
+                                            <option value="769">(GMT +01:00) Logatec</option>
+                                            <option value="267">(GMT +01:00) Milan</option>
+                                            <option value="528">(GMT +01:00) Rabat</option>
+                                            <option value="273">(GMT +01:00) Ilmenau</option>
+                                            <option value="530">(GMT +01:00) Hook</option>
+                                            <option value="531">(GMT +01:00) Acton</option>
+                                            <option value="532">(GMT +01:00) Greenwich</option>
+                                            <option value="22">(GMT +01:00) Amsterdam</option>
+                                            <option value="23">(GMT +01:00) Belgrade</option>
+                                            <option value="24">(GMT +01:00) Berlin</option>
+                                            <option value="25">(GMT +01:00) Bern</option>
+                                            <option value="537">(GMT +01:00) Hornsey</option>
+                                            <option value="26">(GMT +01:00) Bratislava</option>
+                                            <option value="27">(GMT +01:00) Brussels</option>
+                                            <option value="28">(GMT +01:00) Budapest</option>
+                                            <option value="29">(GMT +01:00) Copenhagen</option>
+                                            <option value="30">(GMT +01:00) Ljubljana</option>
+                                            <option value="31">(GMT +01:00) Madrid</option>
+                                            <option value="32">(GMT +01:00) Paris</option>
+                                            <option value="33">(GMT +01:00) Prague</option>
+                                            <option value="34">(GMT +01:00) Rome</option>
+                                            <option value="35">(GMT +01:00) Stockholm</option>
+                                            <option value="547">(GMT +01:00) Wandsworth</option>
+                                            <option value="36">(GMT +01:00) Vienna</option>
+                                            <option value="37">(GMT +01:00) Warsaw</option>
+                                            <option value="38">(GMT +01:00) West Central Africa</option>
+                                            <option value="294">(GMT +01:00) Krakow</option>
+                                            <option value="550">(GMT +01:00) Lisbon</option>
+                                            <option value="39">(GMT +01:00) Zagreb</option>
+                                            <option value="552">(GMT +01:00) Huntingdon</option>
+                                            <option value="553">(GMT +01:00) Aryanah</option>
+                                            <option value="558">(GMT +01:00) Camberwell</option>
+                                            <option value="817">(GMT +01:00) Mountain Ash</option>
+                                            <option value="824">(GMT +01:00) Wigan</option>
+                                            <option value="570">(GMT +01:00) Cirencester</option>
+                                            <option value="573">(GMT +01:00) Manchester</option>
+                                            <option value="575">(GMT +01:00) Kenitra</option>
+                                            <option value="578">(GMT +01:00) Abuja</option>
+                                            <option value="838">(GMT +01:00) Londonderry</option>
+                                            <option value="587">(GMT +01:00) Colchester</option>
+                                            <option value="333">(GMT +01:00) Finstadjordet</option>
+                                            <option value="856">(GMT +01:00) Bristol</option>
+                                            <option value="345">(GMT +01:00) Munich</option>
+                                            <option value="349">(GMT +01:00) Port Harcourt</option>
+                                            <option value="102">(GMT +01:00) Lagos</option>
+                                            <option value="107">(GMT +01:00) Congleton</option>
+                                            <option value="383">(GMT +01:00) Victoria</option>
+                                            <option value="639">(GMT +01:00) Dilsen-Stokkem</option>
+                                            <option value="384">(GMT +01:00) Herzogenrath</option>
+                                            <option value="130">(GMT +01:00) Melton Constable</option>
+                                            <option value="131">(GMT +01:00) Stoke-on-Trent</option>
+                                            <option value="900">(GMT +01:00) Mansfield</option>
+                                            <option value="646">(GMT +01:00) Ibadan</option>
+                                            <option value="904">(GMT +01:00) Sheffield</option>
+                                            <option value="138">(GMT +01:00) Willesden</option>
+                                            <option value="651">(GMT +01:00) Suleja</option>
+                                            <option value="396">(GMT +01:00) Kilkenny</option>
+                                            <option value="910">(GMT +01:00) Kettering</option>
+                                            <option value="146">(GMT +01:00) Reghaia</option>
+                                            <option value="408">(GMT +01:00) Formby</option>
+                                            <option value="418">(GMT +01:00) Dumbarton</option>
+                                            <option value="163">(GMT +01:00) Pontefract</option>
+                                            <option value="419">(GMT +01:00) Norwich</option>
+                                            <option value="430">(GMT +01:00) Portsmouth</option>
+                                            <option value="434">(GMT +01:00) Guimarães</option>
+                                            <option value="437">(GMT +01:00) Relizane</option>
+                                            <option value="439">(GMT +01:00) Hertford</option>
+                                            <option value="695">(GMT +01:00) Turin</option>
+                                            <option value="444">(GMT +01:00) Doncaster</option>
+                                            <option value="193">(GMT +01:00) Benin City</option>
+                                            <option value="454">(GMT +01:00) Halifax</option>
+                                            <option value="202">(GMT +01:00) Birmingham</option>
+                                            <option value="715">(GMT +01:00) Podgorica</option>
+                                            <option value="717">(GMT +01:00) Meknes</option>
+                                            <option value="718">(GMT +01:00) Waalwijk</option>
+                                            <option value="463">(GMT +01:00) Wolverhampton</option>
+                                            <option value="724">(GMT +01:00) Sesto Fiorentino</option>
+                                            <option value="470">(GMT +01:00) Rickmansworth</option>
+                                            <option value="737">(GMT +01:00) Algiers</option>
+                                            <option value="483">(GMT +01:00) Petworth</option>
+                                            <option value="741">(GMT +01:00) Vendelso</option>
+                                            <option value="743">(GMT +01:00) Ekerö</option>
+                                            <option value="489">(GMT +01:00) Fulham</option>
+                                            <option value="497">(GMT +01:00) Bradford</option>
+                                            <option value="503">(GMT +01:00) Brechin</option>
+                                            <option value="250">(GMT +01:00) Oslo</option>
+                                            <option value="764">(GMT +01:00) Frankfurt am Main</option>
+                                            <option value="254">(GMT +01:00) Tirana</option>
+                                            <option value="774">(GMT +02:00) Thessaloniki</option>
+                                            <option value="519">(GMT +02:00) Naxxar</option>
+                                            <option value="780">(GMT +02:00) Harare</option>
+                                            <option value="526">(GMT +02:00) Secunda</option>
+                                            <option value="527">(GMT +02:00) Geneva</option>
+                                            <option value="783">(GMT +02:00) Milnerton</option>
+                                            <option value="284">(GMT +02:00) Tiganesti</option>
+                                            <option value="802">(GMT +02:00) Larnaca</option>
+                                            <option value="40">(GMT +02:00) Athens</option>
+                                            <option value="41">(GMT +02:00) Cairo</option>
+                                            <option value="42">(GMT +02:00) Helsinki</option>
+                                            <option value="43">(GMT +02:00) Istanbul</option>
+                                            <option value="818">(GMT +02:00) Weiterstadt</option>
+                                            <option value="307">(GMT +02:00) Thabazimbi</option>
+                                            <option value="819">(GMT +02:00) Benoni</option>
+                                            <option value="309">(GMT +02:00) Iasi</option>
+                                            <option value="836">(GMT +02:00) Vredendal</option>
+                                            <option value="584">(GMT +02:00) Uppsala</option>
+                                            <option value="840">(GMT +02:00) Reggio Emilia</option>
+                                            <option value="586">(GMT +02:00) Ropa</option>
+                                            <option value="336">(GMT +02:00) Sofia</option>
+                                            <option value="340">(GMT +02:00) Kyiv</option>
+                                            <option value="598">(GMT +02:00) Damietta</option>
+                                            <option value="601">(GMT +02:00) Rivas-Vaciamadrid</option>
+                                            <option value="604">(GMT +02:00) Outjo</option>
+                                            <option value="605">(GMT +02:00) Bijeljina</option>
+                                            <option value="94">(GMT +02:00) Port Elizabeth</option>
+                                            <option value="608">(GMT +02:00) Andernach</option>
+                                            <option value="864">(GMT +02:00) Cologne</option>
+                                            <option value="612">(GMT +02:00) Lippstadt</option>
+                                            <option value="104">(GMT +02:00) Almelo</option>
+                                            <option value="110">(GMT +02:00) Birkirkara</option>
+                                            <option value="368">(GMT +02:00) Gaborone</option>
+                                            <option value="625">(GMT +02:00) Musina</option>
+                                            <option value="116">(GMT +02:00) Kigali</option>
+                                            <option value="373">(GMT +02:00) Tallinn</option>
+                                            <option value="123">(GMT +02:00) Winterthur</option>
+                                            <option value="380">(GMT +02:00) Johannesburg</option>
+                                            <option value="381">(GMT +02:00) Rustenburg</option>
+                                            <option value="129">(GMT +02:00) Cape Town</option>
+                                            <option value="644">(GMT +02:00) Oradea</option>
+                                            <option value="903">(GMT +02:00) Kramfors</option>
+                                            <option value="398">(GMT +02:00) Mor</option>
+                                            <option value="658">(GMT +02:00) Uzhhorod</option>
+                                            <option value="914">(GMT +02:00) Maputo</option>
+                                            <option value="147">(GMT +02:00) Skopje</option>
+                                            <option value="918">(GMT +02:00) Bydgoszcz</option>
+                                            <option value="663">(GMT +02:00) Ovidiu</option>
+                                            <option value="153">(GMT +02:00) Graz</option>
+                                            <option value="410">(GMT +02:00) Verona</option>
+                                            <option value="414">(GMT +02:00) Rincon de la Victoria</option>
+                                            <option value="415">(GMT +02:00) Sliema</option>
+                                            <option value="167">(GMT +02:00) Vaxjo</option>
+                                            <option value="681">(GMT +02:00) Gargalianoi</option>
+                                            <option value="426">(GMT +02:00) Kalkara</option>
+                                            <option value="427">(GMT +02:00) Stavanger</option>
+                                            <option value="432">(GMT +02:00) Kumanovo</option>
+                                            <option value="178">(GMT +02:00) Dirinon</option>
+                                            <option value="690">(GMT +02:00) Tel Aviv</option>
+                                            <option value="703">(GMT +02:00) Odorheiu Secuiesc</option>
+                                            <option value="451">(GMT +02:00) Mdina</option>
+                                            <option value="198">(GMT +02:00) Durban</option>
+                                            <option value="713">(GMT +02:00) Nicosia</option>
+                                            <option value="204">(GMT +02:00) Pretoria</option>
+                                            <option value="716">(GMT +02:00) Inhambane</option>
+                                            <option value="465">(GMT +02:00) Logroño</option>
+                                            <option value="466">(GMT +02:00) Novi Sad</option>
+                                            <option value="472">(GMT +02:00) Granada</option>
+                                            <option value="217">(GMT +02:00) Carei</option>
+                                            <option value="730">(GMT +02:00) Arta</option>
+                                            <option value="735">(GMT +02:00) Dnipropetrovsk</option>
+                                            <option value="482">(GMT +02:00) Hoorn</option>
+                                            <option value="484">(GMT +02:00) Argenteuil</option>
+                                            <option value="231">(GMT +02:00) Pomorie</option>
+                                            <option value="750">(GMT +02:00) Uitenhage</option>
+                                            <option value="239">(GMT +02:00) Poltava</option>
+                                            <option value="241">(GMT +02:00) Beirut</option>
+                                            <option value="753">(GMT +02:00) Alexandria</option>
+                                            <option value="500">(GMT +02:00) Maribor</option>
+                                            <option value="251">(GMT +02:00) Lusaka</option>
+                                            <option value="507">(GMT +02:00) Eindhoven</option>
+                                            <option value="511">(GMT +02:00) Zagazig</option>
+                                            <option value="259">(GMT +03:00) Yaroslavl</option>
+                                            <option value="517">(GMT +03:00) Kampala</option>
+                                            <option value="779">(GMT +03:00) Addis Ababa</option>
+                                            <option value="275">(GMT +03:00) Makkah</option>
+                                            <option value="534">(GMT +03:00) Al Faruq</option>
+                                            <option value="535">(GMT +03:00) Astileu</option>
+                                            <option value="791">(GMT +03:00) Qaryat al 'Ankur</option>
+                                            <option value="792">(GMT +03:00) Al Wakrah</option>
+                                            <option value="541">(GMT +03:00) Lviv</option>
+                                            <option value="542">(GMT +03:00) Mombasa</option>
+                                            <option value="799">(GMT +03:00) Ras Tanura</option>
+                                            <option value="554">(GMT +03:00) Amman</option>
+                                            <option value="44">(GMT +03:00) Baghdad</option>
+                                            <option value="812">(GMT +03:00) Qurtubah</option>
+                                            <option value="45">(GMT +03:00) Kuwait</option>
+                                            <option value="46">(GMT +03:00) Riyadh</option>
+                                            <option value="814">(GMT +03:00) Otopeni</option>
+                                            <option value="564">(GMT +03:00) Erbil</option>
+                                            <option value="825">(GMT +03:00) Pleven</option>
+                                            <option value="576">(GMT +03:00) Dupnitsa</option>
+                                            <option value="579">(GMT +03:00) Khobar</option>
+                                            <option value="589">(GMT +03:00) Rybinsk</option>
+                                            <option value="339">(GMT +03:00) Jubail</option>
+                                            <option value="852">(GMT +03:00) Thika</option>
+                                            <option value="853">(GMT +03:00) Manama</option>
+                                            <option value="857">(GMT +03:00) Bet Shemesh</option>
+                                            <option value="607">(GMT +03:00) Ploieşti</option>
+                                            <option value="863">(GMT +03:00) Reghin</option>
+                                            <option value="609">(GMT +03:00) Brasov</option>
+                                            <option value="99">(GMT +03:00) Dammam</option>
+                                            <option value="621">(GMT +03:00) Ta'if</option>
+                                            <option value="112">(GMT +03:00) Haifa</option>
+                                            <option value="638">(GMT +03:00) Dar es Salaam</option>
+                                            <option value="132">(GMT +03:00) Doha</option>
+                                            <option value="648">(GMT +03:00) Minsk</option>
+                                            <option value="397">(GMT +03:00) Lentvaris</option>
+                                            <option value="400">(GMT +03:00) Juba</option>
+                                            <option value="402">(GMT +03:00) Mogadishu</option>
+                                            <option value="148">(GMT +03:00) Novolukoml'</option>
+                                            <option value="151">(GMT +03:00) Kuwait City</option>
+                                            <option value="412">(GMT +03:00) Tanga</option>
+                                            <option value="159">(GMT +03:00) Bucharest</option>
+                                            <option value="173">(GMT +03:00) Ghidighici</option>
+                                            <option value="436">(GMT +03:00) Nairobi</option>
+                                            <option value="186">(GMT +03:00) Mykolayiv</option>
+                                            <option value="187">(GMT +03:00) Sibiu</option>
+                                            <option value="701">(GMT +03:00) Sanliurfa</option>
+                                            <option value="455">(GMT +03:00) Syktyvkar</option>
+                                            <option value="467">(GMT +03:00) Hargeisa</option>
+                                            <option value="727">(GMT +03:00) St Petersburg</option>
+                                            <option value="227">(GMT +03:00) Jeddah</option>
+                                            <option value="244">(GMT +03:00) Ankara</option>
+                                            <option value="47">(GMT +03:30) Tehran</option>
+                                            <option value="264">(GMT +04:00) Nizwa</option>
+                                            <option value="807">(GMT +04:00) K'alak'i T'bilisi</option>
+                                            <option value="48">(GMT +04:00) Dubai</option>
+                                            <option value="49">(GMT +04:00) Moscow</option>
+                                            <option value="50">(GMT +04:00) Muscat</option>
+                                            <option value="51">(GMT +04:00) St. Petersburg</option>
+                                            <option value="356">(GMT +04:00) Victoria</option>
+                                            <option value="106">(GMT +04:00) Abu Dhabi</option>
+                                            <option value="364">(GMT +04:00) Centre de Flacq</option>
+                                            <option value="111">(GMT +04:00) Al Fujairah City</option>
+                                            <option value="624">(GMT +04:00) Dayrah</option>
+                                            <option value="113">(GMT +04:00) Ajman</option>
+                                            <option value="114">(GMT +04:00) Sharjah</option>
+                                            <option value="115">(GMT +04:00) Al Ain City</option>
+                                            <option value="640">(GMT +04:00) Tbilisi</option>
+                                            <option value="133">(GMT +04:00) Ras al-Khaimah</option>
+                                            <option value="154">(GMT +04:00) Bidiyah</option>
+                                            <option value="176">(GMT +04:00) Baku</option>
+                                            <option value="438">(GMT +04:00) Beau Bassin-Rose Hill</option>
+                                            <option value="726">(GMT +04:00) Sohar</option>
+                                            <option value="232">(GMT +04:00) Ibra'</option>
+                                            <option value="235">(GMT +04:00) Seeb</option>
+                                            <option value="502">(GMT +04:00) Ibri</option>
+                                            <option value="52">(GMT +04:30) Kabul</option>
+                                            <option value="776">(GMT +05:00) Gujrat</option>
+                                            <option value="533">(GMT +05:00) Hyderabad</option>
+                                            <option value="53">(GMT +05:00) Lahore</option>
+                                            <option value="54">(GMT +05:00) Islamabad</option>
+                                            <option value="55">(GMT +05:00) Karachi</option>
+                                            <option value="56">(GMT +05:00) Tashkent</option>
+                                            <option value="322">(GMT +05:00) Malé</option>
+                                            <option value="854">(GMT +05:00) Keles</option>
+                                            <option value="89">(GMT +05:00) Faisalabad</option>
+                                            <option value="912">(GMT +05:00) Sialkot</option>
+                                            <option value="677">(GMT +05:00) Gujranwala</option>
+                                            <option value="171">(GMT +05:00) Multan</option>
+                                            <option value="185">(GMT +05:00) Novotroitsk</option>
+                                            <option value="721">(GMT +05:00) Taxila</option>
+                                            <option value="257">(GMT +05:30) Hokandara South</option>
+                                            <option value="515">(GMT +05:30) Civil Lines</option>
+                                            <option value="261">(GMT +05:30) Nagpur</option>
+                                            <option value="523">(GMT +05:30) Sardarshahr</option>
+                                            <option value="781">(GMT +05:30) Bhilai</option>
+                                            <option value="529">(GMT +05:30) Guwahati</option>
+                                            <option value="277">(GMT +05:30) Jaipur</option>
+                                            <option value="790">(GMT +05:30) Colombo</option>
+                                            <option value="280">(GMT +05:30) Ernakulam</option>
+                                            <option value="281">(GMT +05:30) Gandhidham</option>
+                                            <option value="793">(GMT +05:30) Malda</option>
+                                            <option value="285">(GMT +05:30) Morvi</option>
+                                            <option value="546">(GMT +05:30) Bhuj</option>
+                                            <option value="804">(GMT +05:30) Kanpur</option>
+                                            <option value="805">(GMT +05:30) Jamnagar</option>
+                                            <option value="806">(GMT +05:30) Panjim</option>
+                                            <option value="815">(GMT +05:30) Bharuch</option>
+                                            <option value="561">(GMT +05:30) Navsari</option>
+                                            <option value="563">(GMT +05:30) Banka</option>
+                                            <option value="820">(GMT +05:30) Rajahmundry</option>
+                                            <option value="57">(GMT +05:30) Delhi</option>
+                                            <option value="317">(GMT +05:30) Gampaha</option>
+                                            <option value="833">(GMT +05:30) Pugoda</option>
+                                            <option value="834">(GMT +05:30) Dombivali</option>
+                                            <option value="835">(GMT +05:30) Machhagan</option>
+                                            <option value="324">(GMT +05:30) Itanagar</option>
+                                            <option value="581">(GMT +05:30) Vadodara</option>
+                                            <option value="583">(GMT +05:30) Tumkūr</option>
+                                            <option value="585">(GMT +05:30) Anegundi</option>
+                                            <option value="330">(GMT +05:30) Ghaziabad</option>
+                                            <option value="331">(GMT +05:30) Thane</option>
+                                            <option value="590">(GMT +05:30) Kariapatti</option>
+                                            <option value="335">(GMT +05:30) Belgaum</option>
+                                            <option value="594">(GMT +05:30) Howrah</option>
+                                            <option value="343">(GMT +05:30) Kurunegala</option>
+                                            <option value="344">(GMT +05:30) Chittaurgarh</option>
+                                            <option value="600">(GMT +05:30) Jammu</option>
+                                            <option value="858">(GMT +05:30) Jabalpur</option>
+                                            <option value="96">(GMT +05:30) New Delhi</option>
+                                            <option value="97">(GMT +05:30) Patna</option>
+                                            <option value="354">(GMT +05:30) Kochi</option>
+                                            <option value="868">(GMT +05:30) Gurgaon</option>
+                                            <option value="103">(GMT +05:30) Hyderabad</option>
+                                            <option value="871">(GMT +05:30) Thoothukudi</option>
+                                            <option value="105">(GMT +05:30) Kottayam</option>
+                                            <option value="363">(GMT +05:30) Kolkata</option>
+                                            <option value="619">(GMT +05:30) Agartala</option>
+                                            <option selected="selected" value="109">(GMT +05:30) Ahmedabad</option>
+                                            <option value="877">(GMT +05:30) Malappuram</option>
+                                            <option value="878">(GMT +05:30) Panvel</option>
+                                            <option value="623">(GMT +05:30) Manuguru</option>
+                                            <option value="370">(GMT +05:30) Chandigarh</option>
+                                            <option value="627">(GMT +05:30) Davangere</option>
+                                            <option value="374">(GMT +05:30) Coimbatore</option>
+                                            <option value="119">(GMT +05:30) Mumbai</option>
+                                            <option value="888">(GMT +05:30) Kolhapur</option>
+                                            <option value="892">(GMT +05:30) Ghatal</option>
+                                            <option value="637">(GMT +05:30) Hubli</option>
+                                            <option value="893">(GMT +05:30) Kakinada</option>
+                                            <option value="896">(GMT +05:30) Khammam</option>
+                                            <option value="134">(GMT +05:30) Pune</option>
+                                            <option value="647">(GMT +05:30) Jiaganj</option>
+                                            <option value="137">(GMT +05:30) Jalalabad</option>
+                                            <option value="649">(GMT +05:30) Kandy</option>
+                                            <option value="905">(GMT +05:30) Connaught Place</option>
+                                            <option value="139">(GMT +05:30) Jamshedpur</option>
+                                            <option value="144">(GMT +05:30) Namakkal</option>
+                                            <option value="915">(GMT +05:30) Bhavnagar</option>
+                                            <option value="150">(GMT +05:30) Kozhikode</option>
+                                            <option value="406">(GMT +05:30) Shrinagar</option>
+                                            <option value="407">(GMT +05:30) Mysore</option>
+                                            <option value="155">(GMT +05:30) Surat</option>
+                                            <option value="669">(GMT +05:30) Kollam</option>
+                                            <option value="158">(GMT +05:30) Varanasi</option>
+                                            <option value="672">(GMT +05:30) Panchkula</option>
+                                            <option value="162">(GMT +05:30) Chennai</option>
+                                            <option value="679">(GMT +05:30) Thenali</option>
+                                            <option value="179">(GMT +05:30) Dehradun</option>
+                                            <option value="691">(GMT +05:30) Ludhiana</option>
+                                            <option value="692">(GMT +05:30) Agra</option>
+                                            <option value="696">(GMT +05:30) Kalkadambur</option>
+                                            <option value="697">(GMT +05:30) Rajagiriya</option>
+                                            <option value="700">(GMT +05:30) Madurai</option>
+                                            <option value="707">(GMT +05:30) Dhanbad</option>
+                                            <option value="710">(GMT +05:30) Kichha</option>
+                                            <option value="200">(GMT +05:30) Bengaluru</option>
+                                            <option value="456">(GMT +05:30) Hosur</option>
+                                            <option value="458">(GMT +05:30) Noida</option>
+                                            <option value="461">(GMT +05:30) Lucknow</option>
+                                            <option value="720">(GMT +05:30) Amravati</option>
+                                            <option value="210">(GMT +05:30) Barmer</option>
+                                            <option value="471">(GMT +05:30) Tirupur</option>
+                                            <option value="218">(GMT +05:30) Galle</option>
+                                            <option value="731">(GMT +05:30) Kasaragod</option>
+                                            <option value="221">(GMT +05:30) Palakkad</option>
+                                            <option value="224">(GMT +05:30) Bhubaneswar</option>
+                                            <option value="229">(GMT +05:30) Pattambi</option>
+                                            <option value="230">(GMT +05:30) Vaishali Nagar</option>
+                                            <option value="487">(GMT +05:30) Gandhinagar</option>
+                                            <option value="233">(GMT +05:30) Thrissur</option>
+                                            <option value="745">(GMT +05:30) Siliguri</option>
+                                            <option value="748">(GMT +05:30) Bahadurgarh</option>
+                                            <option value="749">(GMT +05:30) Rajkot</option>
+                                            <option value="240">(GMT +05:30) Indore</option>
+                                            <option value="496">(GMT +05:30) Gwalior</option>
+                                            <option value="246">(GMT +05:30) Chengalpattu</option>
+                                            <option value="510">(GMT +05:30) Vijayawada</option>
+                                            <option value="767">(GMT +05:30) Salem</option>
+                                            <option value="58">(GMT +05:45) Kathmandu</option>
+                                            <option value="890">(GMT +05:45) Surkhet</option>
+                                            <option value="504">(GMT +05:45) Kathmandu</option>
+                                            <option value="505">(GMT +05:45) Butwal</option>
+                                            <option value="59">(GMT +06:00) Dhaka</option>
+                                            <option value="642">(GMT +06:00) Chittagong</option>
+                                            <option value="671">(GMT +06:00) Tsimasham</option>
+                                            <option value="704">(GMT +06:00) Chandgaon</option>
+                                            <option value="60">(GMT +06:30) Rangoon</option>
+                                            <option value="572">(GMT +06:30) Yangon</option>
+                                            <option value="265">(GMT +07:00) Kebon Jeruk</option>
+                                            <option value="777">(GMT +07:00) Phnom Penh</option>
+                                            <option value="278">(GMT +07:00) Trenggalek</option>
+                                            <option value="796">(GMT +07:00) Kuningan Barat</option>
+                                            <option value="811">(GMT +07:00) Probolinggo</option>
+                                            <option value="816">(GMT +07:00) Chiang Mai</option>
+                                            <option value="61">(GMT +07:00) Bangkok</option>
+                                            <option value="62">(GMT +07:00) Jakarta</option>
+                                            <option value="595">(GMT +07:00) Depok</option>
+                                            <option value="855">(GMT +07:00) Bac Giang</option>
+                                            <option value="865">(GMT +07:00) Choeng Thale</option>
+                                            <option value="880">(GMT +07:00) Bandung</option>
+                                            <option value="882">(GMT +07:00) Jember</option>
+                                            <option value="377">(GMT +07:00) Batam</option>
+                                            <option value="378">(GMT +07:00) Tangerang</option>
+                                            <option value="143">(GMT +07:00) Bekasi</option>
+                                            <option value="165">(GMT +07:00) Ho Chi Minh City</option>
+                                            <option value="680">(GMT +07:00) Cimahi</option>
+                                            <option value="169">(GMT +07:00) Hanoi</option>
+                                            <option value="682">(GMT +07:00) Hanoi</option>
+                                            <option value="172">(GMT +07:00) Thanh Ba</option>
+                                            <option value="693">(GMT +07:00) Sidoarjo</option>
+                                            <option value="705">(GMT +07:00) Tanjung Priok</option>
+                                            <option value="197">(GMT +07:00) Surabaya</option>
+                                            <option value="480">(GMT +07:00) Bogor</option>
+                                            <option value="485">(GMT +07:00) Thanyaburi</option>
+                                            <option value="492">(GMT +07:00) Pekanbaru</option>
+                                            <option value="768">(GMT +08:00) Davao City</option>
+                                            <option value="516">(GMT +08:00) Sungai Buloh</option>
+                                            <option value="522">(GMT +08:00) Puchong Batu Dua Belas</option>
+                                            <option value="525">(GMT +08:00) Meycauayan</option>
+                                            <option value="785">(GMT +08:00) Koronadal</option>
+                                            <option value="540">(GMT +08:00) San Pedro</option>
+                                            <option value="800">(GMT +08:00) Mandaue City</option>
+                                            <option value="555">(GMT +08:00) Shah Alam</option>
+                                            <option value="557">(GMT +08:00) Sentul</option>
+                                            <option value="566">(GMT +08:00) Angeles City</option>
+                                            <option value="567">(GMT +08:00) Imus</option>
+                                            <option value="569">(GMT +08:00) Jurong East</option>
+                                            <option value="63">(GMT +08:00) Beijing</option>
+                                            <option value="319">(GMT +08:00) Petaling Jaya</option>
+                                            <option value="64">(GMT +08:00) Hong Kong</option>
+                                            <option value="65">(GMT +08:00) Kuala Lumpur</option>
+                                            <option value="66">(GMT +08:00) Perth</option>
+                                            <option value="67">(GMT +08:00) Singapore</option>
+                                            <option value="323">(GMT +08:00) Cottesloe</option>
+                                            <option value="68">(GMT +08:00) Taipei</option>
+                                            <option value="69">(GMT +08:00) Urumqi</option>
+                                            <option value="843">(GMT +08:00) Sungai Petani</option>
+                                            <option value="844">(GMT +08:00) Ipoh</option>
+                                            <option value="337">(GMT +08:00) Serdang</option>
+                                            <option value="593">(GMT +08:00) Bacolod City</option>
+                                            <option value="597">(GMT +08:00) Dengkil</option>
+                                            <option value="93">(GMT +08:00) Shatin</option>
+                                            <option value="610">(GMT +08:00) Kampong Bukit Panjang</option>
+                                            <option value="866">(GMT +08:00) Santa Rosa</option>
+                                            <option value="869">(GMT +08:00) Malacca</option>
+                                            <option value="614">(GMT +08:00) Bagumbayan</option>
+                                            <option value="630">(GMT +08:00) Balikpapan</option>
+                                            <option value="886">(GMT +08:00) City of Muntinglupa</option>
+                                            <option value="122">(GMT +08:00) Sampaloc</option>
+                                            <option value="382">(GMT +08:00) Kota Kinabalu</option>
+                                            <option value="641">(GMT +08:00) Marikina City</option>
+                                            <option value="897">(GMT +08:00) Seremban</option>
+                                            <option value="898">(GMT +08:00) Mataram</option>
+                                            <option value="899">(GMT +08:00) George Town</option>
+                                            <option value="902">(GMT +08:00) Batangas</option>
+                                            <option value="652">(GMT +08:00) Kuching</option>
+                                            <option value="911">(GMT +08:00) Alor Star</option>
+                                            <option value="662">(GMT +08:00) Muar town</option>
+                                            <option value="664">(GMT +08:00) Makati City</option>
+                                            <option value="413">(GMT +08:00) Cheung Sha Wan</option>
+                                            <option value="416">(GMT +08:00) Bandar Seri Begawan</option>
+                                            <option value="420">(GMT +08:00) Johor Bahru</option>
+                                            <option value="684">(GMT +08:00) Cagayan de Oro</option>
+                                            <option value="182">(GMT +08:00) Taoyuan District</option>
+                                            <option value="443">(GMT +08:00) Kuantan</option>
+                                            <option value="191">(GMT +08:00) Chang-hua</option>
+                                            <option value="206">(GMT +08:00) Langgar</option>
+                                            <option value="209">(GMT +08:00) Subang Jaya</option>
+                                            <option value="722">(GMT +08:00) Seri Iskandar</option>
+                                            <option value="211">(GMT +08:00) Central</option>
+                                            <option value="723">(GMT +08:00) Cainta</option>
+                                            <option value="477">(GMT +08:00) Cebu City</option>
+                                            <option value="738">(GMT +08:00) Santiago</option>
+                                            <option value="234">(GMT +08:00) Booragoon</option>
+                                            <option value="494">(GMT +08:00) San Pablo City</option>
+                                            <option value="242">(GMT +08:00) Kampong Pasir Ris</option>
+                                            <option value="754">(GMT +08:00) Teluk Intan</option>
+                                            <option value="243">(GMT +08:00) Quezon City</option>
+                                            <option value="499">(GMT +08:00) Sham Tseng</option>
+                                            <option value="249">(GMT +08:00) Iloilo City</option>
+                                            <option value="544">(GMT +09:00) Suai</option>
+                                            <option value="70">(GMT +09:00) Osaka</option>
+                                            <option value="71">(GMT +09:00) Seoul</option>
+                                            <option value="72">(GMT +09:00) Tokyo</option>
+                                            <option value="884">(GMT +09:00) Hokkaido</option>
+                                            <option value="751">(GMT +09:00) Jayapura</option>
+                                            <option value="73">(GMT +09:30) Adelaide</option>
+                                            <option value="74">(GMT +09:30) Darwin</option>
+                                            <option value="295">(GMT +10:00) Hagåtña</option>
+                                            <option value="308">(GMT +10:00) Tamuning</option>
+                                            <option value="316">(GMT +10:00) Yigo Village</option>
+                                            <option value="828">(GMT +10:00) Surry Hills</option>
+                                            <option value="328">(GMT +10:00) Mooroobool</option>
+                                            <option value="75">(GMT +10:00) Brisbane</option>
+                                            <option value="76">(GMT +10:00) Canberra</option>
+                                            <option value="77">(GMT +10:00) Hobart</option>
+                                            <option value="78">(GMT +10:00) Melbourne</option>
+                                            <option value="79">(GMT +10:00) Port Moresby</option>
+                                            <option value="80">(GMT +10:00) Sydney</option>
+                                            <option value="98">(GMT +10:00) Annandale</option>
+                                            <option value="876">(GMT +10:00) Riverwood</option>
+                                            <option value="369">(GMT +10:00) Rockhampton</option>
+                                            <option value="883">(GMT +10:00) Sunshine Coast</option>
+                                            <option value="127">(GMT +10:00) Mosman</option>
+                                            <option value="403">(GMT +10:00) Northcote</option>
+                                            <option value="149">(GMT +10:00) Concord West</option>
+                                            <option value="450">(GMT +10:00) Wheelers Hill</option>
+                                            <option value="469">(GMT +10:00) Preston</option>
+                                            <option value="474">(GMT +10:00) Hoppers Crossing</option>
+                                            <option value="220">(GMT +10:00) Wooloowin</option>
+                                            <option value="478">(GMT +10:00) Gympie</option>
+                                            <option value="787">(GMT +11:00) Canberra</option>
+                                            <option value="81">(GMT +11:00) Vladivostok</option>
+                                            <option value="616">(GMT +11:00) Coburg</option>
+                                            <option value="628">(GMT +11:00) Potts Point</option>
+                                            <option value="376">(GMT +11:00) Newham</option>
+                                            <option value="676">(GMT +11:00) Merrylands</option>
+                                            <option value="205">(GMT +11:00) Dee Why</option>
+                                            <option value="212">(GMT +11:00) Armadale</option>
+                                            <option value="226">(GMT +11:00) Shalvey</option>
+                                            <option value="830">(GMT +12:00) Suva</option>
+                                            <option value="82">(GMT +12:00) Auckland</option>
+                                            <option value="83">(GMT +12:00) Fiji</option>
+                                            <option value="84">(GMT +12:00) International Date Line West</option>
+                                            <option value="85">(GMT +13:00) Nuku alofa</option>
+                                            <option value="196">(GMT +13:00) Wellington</option>
+                                            <option value="19">(GMT -01:00) Azores</option>
+                                            <option value="20">(GMT -01:00) Cape Verde Is.</option>
+                                            <option value="18">(GMT -02:00) Mid-Atlantic</option>
+                                            <option value="633">(GMT -02:00) Joinville</option>
+                                            <option value="14">(GMT -03:00) Brasilia</option>
+                                            <option value="15">(GMT -03:00) Buenos Aires</option>
+                                            <option value="16">(GMT -03:00) Georgetown</option>
+                                            <option value="17">(GMT -03:00) Greenland</option>
+                                            <option value="803">(GMT -03:00) Paramaribo</option>
+                                            <option value="568">(GMT -03:00) São Paulo</option>
+                                            <option value="136">(GMT -03:00) Palmas</option>
+                                            <option value="666">(GMT -03:00) Villa Gesell</option>
+                                            <option value="175">(GMT -03:00) João Pessoa</option>
+                                            <option value="180">(GMT -03:00) Marialva</option>
+                                            <option value="181">(GMT -03:00) Imbituva</option>
+                                            <option value="183">(GMT -03:00) Uberlândia</option>
+                                            <option value="189">(GMT -03:00) Lanus</option>
+                                            <option value="192">(GMT -03:00) Comodoro Rivadavia</option>
+                                            <option value="708">(GMT -03:00) Campo Grande</option>
+                                            <option value="468">(GMT -03:00) Ribeirão Preto</option>
+                                            <option value="479">(GMT -03:00) Rio de Janeiro</option>
+                                            <option value="237">(GMT -03:00) Montevideo</option>
+                                            <option value="13">(GMT -03:30) Newfoundland</option>
+                                            <option value="318">(GMT -03:30) Harbour Main</option>
+                                            <option value="514">(GMT -04:00) Miami Beach</option>
+                                            <option value="518">(GMT -04:00) Lehigh Acres</option>
+                                            <option value="520">(GMT -04:00) Traverse City</option>
+                                            <option value="10">(GMT -04:00) Atlantic Time (Canada)</option>
+                                            <option value="12">(GMT -04:00) Santiago</option>
+                                            <option value="801">(GMT -04:00) Providence</option>
+                                            <option value="548">(GMT -04:00) Hamburg</option>
+                                            <option value="549">(GMT -04:00) Ambler</option>
+                                            <option value="551">(GMT -04:00) Bladenboro</option>
+                                            <option value="810">(GMT -04:00) Bridgetown</option>
+                                            <option value="813">(GMT -04:00) Collegeville</option>
+                                            <option value="559">(GMT -04:00) St John's</option>
+                                            <option value="565">(GMT -04:00) Salem</option>
+                                            <option value="821">(GMT -04:00) Maryville</option>
+                                            <option value="822">(GMT -04:00) Richburg</option>
+                                            <option value="823">(GMT -04:00) Milton</option>
+                                            <option value="826">(GMT -04:00) Etobicoke</option>
+                                            <option value="571">(GMT -04:00) Odenton</option>
+                                            <option value="827">(GMT -04:00) Raleigh</option>
+                                            <option value="574">(GMT -04:00) Brampton</option>
+                                            <option value="831">(GMT -04:00) Havertown</option>
+                                            <option value="832">(GMT -04:00) Binghamton</option>
+                                            <option value="577">(GMT -04:00) Valdosta</option>
+                                            <option value="842">(GMT -04:00) South Weymouth</option>
+                                            <option value="332">(GMT -04:00) Hamilton</option>
+                                            <option value="588">(GMT -04:00) Burlington</option>
+                                            <option value="845">(GMT -04:00) Brooklyn</option>
+                                            <option value="846">(GMT -04:00) State College</option>
+                                            <option value="591">(GMT -04:00) Hickory</option>
+                                            <option value="847">(GMT -04:00) Concepción</option>
+                                            <option value="848">(GMT -04:00) Attica</option>
+                                            <option value="849">(GMT -04:00) Clinton Township</option>
+                                            <option value="90">(GMT -04:00) Miami</option>
+                                            <option value="859">(GMT -04:00) Lawrenceville</option>
+                                            <option value="861">(GMT -04:00) Saint Johns</option>
+                                            <option value="95">(GMT -04:00) Philadelphia</option>
+                                            <option value="613">(GMT -04:00) Carolina</option>
+                                            <option value="870">(GMT -04:00) Staten Island</option>
+                                            <option value="615">(GMT -04:00) Gaithersburg</option>
+                                            <option value="872">(GMT -04:00) Gainesville</option>
+                                            <option value="873">(GMT -04:00) Bryson City</option>
+                                            <option value="618">(GMT -04:00) Medford</option>
+                                            <option value="371">(GMT -04:00) Dorchester</option>
+                                            <option value="372">(GMT -04:00) Columbus</option>
+                                            <option value="885">(GMT -04:00) Trenton</option>
+                                            <option value="120">(GMT -04:00) Garnerville</option>
+                                            <option value="121">(GMT -04:00) Berea</option>
+                                            <option value="889">(GMT -04:00) Akron</option>
+                                            <option value="891">(GMT -04:00) Wynantskill</option>
+                                            <option value="125">(GMT -04:00) St. Thomas</option>
+                                            <option value="894">(GMT -04:00) Greenfield</option>
+                                            <option value="128">(GMT -04:00) Richmond</option>
+                                            <option value="901">(GMT -04:00) Athens</option>
+                                            <option value="390">(GMT -04:00) Seymour</option>
+                                            <option value="135">(GMT -04:00) Hackensack</option>
+                                            <option value="391">(GMT -04:00) Camden</option>
+                                            <option value="393">(GMT -04:00) Tysons Corner</option>
+                                            <option value="394">(GMT -04:00) Reynoldsburg</option>
+                                            <option value="907">(GMT -04:00) Christiansted</option>
+                                            <option value="140">(GMT -04:00) Meriden</option>
+                                            <option value="908">(GMT -04:00) Belchertown</option>
+                                            <option value="142">(GMT -04:00) Iva</option>
+                                            <option value="399">(GMT -04:00) Valley Stream</option>
+                                            <option value="404">(GMT -04:00) Harleysville</option>
+                                            <option value="916">(GMT -04:00) Trenton</option>
+                                            <option value="919">(GMT -04:00) Decatur</option>
+                                            <option value="152">(GMT -04:00) Summerville</option>
+                                            <option value="409">(GMT -04:00) Newmarket</option>
+                                            <option value="411">(GMT -04:00) Lexington</option>
+                                            <option value="156">(GMT -04:00) Charlotte</option>
+                                            <option value="157">(GMT -04:00) Allentown</option>
+                                            <option value="160">(GMT -04:00) Orlando</option>
+                                            <option value="421">(GMT -04:00) Schenectady</option>
+                                            <option value="422">(GMT -04:00) Cicero</option>
+                                            <option value="424">(GMT -04:00) Waterloo</option>
+                                            <option value="683">(GMT -04:00) Manaus</option>
+                                            <option value="429">(GMT -04:00) Atlanta</option>
+                                            <option value="433">(GMT -04:00) Greenville</option>
+                                            <option value="435">(GMT -04:00) Shrewsbury</option>
+                                            <option value="440">(GMT -04:00) Buchanan</option>
+                                            <option value="442">(GMT -04:00) Cincinnati</option>
+                                            <option value="445">(GMT -04:00) Wilkes-Barre</option>
+                                            <option value="190">(GMT -04:00) Boynton Beach</option>
+                                            <option value="446">(GMT -04:00) Jonesborough</option>
+                                            <option value="448">(GMT -04:00) Québec</option>
+                                            <option value="194">(GMT -04:00) Walbridge</option>
+                                            <option value="195">(GMT -04:00) Jacksonville</option>
+                                            <option value="452">(GMT -04:00) Olivet</option>
+                                            <option value="453">(GMT -04:00) Waxhaw</option>
+                                            <option value="201">(GMT -04:00) Andover</option>
+                                            <option value="457">(GMT -04:00) Quincy</option>
+                                            <option value="459">(GMT -04:00) Bluffton</option>
+                                            <option value="460">(GMT -04:00) Conway</option>
+                                            <option value="207">(GMT -04:00) New York</option>
+                                            <option value="464">(GMT -04:00) Monsey</option>
+                                            <option value="213">(GMT -04:00) San Juan</option>
+                                            <option value="476">(GMT -04:00) Port of Spain</option>
+                                            <option value="481">(GMT -04:00) Williamsburg</option>
+                                            <option value="488">(GMT -04:00) London</option>
+                                            <option value="501">(GMT -04:00) Miramar</option>
+                                            <option value="508">(GMT -04:00) Toa Alta</option>
+                                            <option value="11">(GMT -04:30) Caracas</option>
+                                            <option value="258">(GMT -05:00) Galena</option>
+                                            <option value="771">(GMT -05:00) Fermont</option>
+                                            <option value="773">(GMT -05:00) York</option>
+                                            <option value="262">(GMT -05:00) Vienna</option>
+                                            <option value="263">(GMT -05:00) Asheville</option>
+                                            <option value="9">(GMT -05:00) Eastern Time (US &amp; Canada)</option>
+                                            <option value="784">(GMT -05:00) Chester</option>
+                                            <option value="786">(GMT -05:00) Amityville</option>
+                                            <option value="276">(GMT -05:00) Mississauga</option>
+                                            <option value="788">(GMT -05:00) Quito</option>
+                                            <option value="789">(GMT -05:00) South Bend</option>
+                                            <option value="536">(GMT -05:00) Coppell</option>
+                                            <option value="794">(GMT -05:00) Lincoln</option>
+                                            <option value="797">(GMT -05:00) Bogotá</option>
+                                            <option value="286">(GMT -05:00) Arlington</option>
+                                            <option value="798">(GMT -05:00) West Bend</option>
+                                            <option value="287">(GMT -05:00) Royal Oak</option>
+                                            <option value="543">(GMT -05:00) Lufkin</option>
+                                            <option value="297">(GMT -05:00) Springfield</option>
+                                            <option value="298">(GMT -05:00) Social Circle</option>
+                                            <option value="299">(GMT -05:00) Snellville</option>
+                                            <option value="300">(GMT -05:00) Louisville</option>
+                                            <option value="556">(GMT -05:00) Portland</option>
+                                            <option value="303">(GMT -05:00) Washington</option>
+                                            <option value="306">(GMT -05:00) Statesville</option>
+                                            <option value="562">(GMT -05:00) Puebla</option>
+                                            <option value="315">(GMT -05:00) Fairfax</option>
+                                            <option value="829">(GMT -05:00) San Antonio</option>
+                                            <option value="580">(GMT -05:00) Aguascalientes</option>
+                                            <option value="839">(GMT -05:00) Menominee</option>
+                                            <option value="334">(GMT -05:00) Huntington Station</option>
+                                            <option value="592">(GMT -05:00) Austin</option>
+                                            <option value="850">(GMT -05:00) Dublin</option>
+                                            <option value="851">(GMT -05:00) Columbia</option>
+                                            <option value="596">(GMT -05:00) Evergreen Park</option>
+                                            <option value="599">(GMT -05:00) Antioch</option>
+                                            <option value="603">(GMT -05:00) Jalostotitlan</option>
+                                            <option value="348">(GMT -05:00) Moneta</option>
+                                            <option value="862">(GMT -05:00) Forney</option>
+                                            <option value="351">(GMT -05:00) Seminole</option>
+                                            <option value="353">(GMT -05:00) Pinellas Park</option>
+                                            <option value="611">(GMT -05:00) Frisco</option>
+                                            <option value="100">(GMT -05:00) Laplace</option>
+                                            <option value="360">(GMT -05:00) Winston-Salem</option>
+                                            <option value="362">(GMT -05:00) Toronto</option>
+                                            <option value="874">(GMT -05:00) Arcadia</option>
+                                            <option value="875">(GMT -05:00) Arequipa</option>
+                                            <option value="108">(GMT -05:00) Clinton</option>
+                                            <option value="620">(GMT -05:00) Saint Paul</option>
+                                            <option value="366">(GMT -05:00) West Babylon</option>
+                                            <option value="881">(GMT -05:00) Lindale</option>
+                                            <option value="626">(GMT -05:00) Detroit</option>
+                                            <option value="629">(GMT -05:00) The Bronx</option>
+                                            <option value="118">(GMT -05:00) Pensacola</option>
+                                            <option value="375">(GMT -05:00) City of Saint Peters</option>
+                                            <option value="631">(GMT -05:00) Canton</option>
+                                            <option value="379">(GMT -05:00) Shelbyville</option>
+                                            <option value="635">(GMT -05:00) Bradenton</option>
+                                            <option value="636">(GMT -05:00) Dumfries</option>
+                                            <option value="643">(GMT -05:00) Curwensville</option>
+                                            <option value="388">(GMT -05:00) Kearney</option>
+                                            <option value="389">(GMT -05:00) Muskogee</option>
+                                            <option value="650">(GMT -05:00) Columbus</option>
+                                            <option value="906">(GMT -05:00) Milton</option>
+                                            <option value="395">(GMT -05:00) Rosenberg</option>
+                                            <option value="141">(GMT -05:00) Lake Zurich</option>
+                                            <option value="654">(GMT -05:00) Merrimack</option>
+                                            <option value="145">(GMT -05:00) Chesterton</option>
+                                            <option value="913">(GMT -05:00) Denton</option>
+                                            <option value="917">(GMT -05:00) Manchester</option>
+                                            <option value="675">(GMT -05:00) Warwick</option>
+                                            <option value="423">(GMT -05:00) Farmington</option>
+                                            <option value="168">(GMT -05:00) Panama City</option>
+                                            <option value="170">(GMT -05:00) Kingston</option>
+                                            <option value="174">(GMT -05:00) Madison</option>
+                                            <option value="686">(GMT -05:00) Cambridge</option>
+                                            <option value="177">(GMT -05:00) Harlan</option>
+                                            <option value="184">(GMT -05:00) Monterrey</option>
+                                            <option value="441">(GMT -05:00) Hopkins</option>
+                                            <option value="699">(GMT -05:00) Windsor</option>
+                                            <option value="188">(GMT -05:00) Willmar</option>
+                                            <option value="709">(GMT -05:00) Bowling Green</option>
+                                            <option value="199">(GMT -05:00) Dallas</option>
+                                            <option value="711">(GMT -05:00) Pittston</option>
+                                            <option value="719">(GMT -05:00) Bridgeport</option>
+                                            <option value="725">(GMT -05:00) Queens</option>
+                                            <option value="216">(GMT -05:00) Watford City</option>
+                                            <option value="728">(GMT -05:00) Winter Park</option>
+                                            <option value="473">(GMT -05:00) Cuenca</option>
+                                            <option value="729">(GMT -05:00) Ottawa</option>
+                                            <option value="475">(GMT -05:00) Clearwater</option>
+                                            <option value="223">(GMT -05:00) Virginia Beach</option>
+                                            <option value="228">(GMT -05:00) Lima</option>
+                                            <option value="740">(GMT -05:00) Mount Royal</option>
+                                            <option value="486">(GMT -05:00) George Town</option>
+                                            <option value="490">(GMT -05:00) Wichita</option>
+                                            <option value="747">(GMT -05:00) Marietta</option>
+                                            <option value="236">(GMT -05:00) Bristow</option>
+                                            <option value="238">(GMT -05:00) Fort Lauderdale</option>
+                                            <option value="495">(GMT -05:00) Spring</option>
+                                            <option value="755">(GMT -05:00) DeLand</option>
+                                            <option value="247">(GMT -05:00) Lewis Center</option>
+                                            <option value="761">(GMT -05:00) Owings Mills</option>
+                                            <option value="252">(GMT -05:00) Montreal</option>
+                                            <option value="509">(GMT -05:00) Memphis</option>
+                                            <option value="765">(GMT -05:00) Tallahassee</option>
+                                            <option value="255">(GMT -05:00) Mansfield</option>
+                                            <option value="256">(GMT -06:00) Chicago</option>
+                                            <option value="260">(GMT -06:00) Allen</option>
+                                            <option value="772">(GMT -06:00) Santa Tecla</option>
+                                            <option value="7">(GMT -06:00) Central America</option>
+                                            <option value="8">(GMT -06:00) Central Time (US &amp; Canada)</option>
+                                            <option value="521">(GMT -06:00) Lethbridge</option>
+                                            <option value="269">(GMT -06:00) St Louis</option>
+                                            <option value="270">(GMT -06:00) Houston</option>
+                                            <option value="272">(GMT -06:00) Marinette</option>
+                                            <option value="274">(GMT -06:00) Milwaukee</option>
+                                            <option value="282">(GMT -06:00) Brentwood</option>
+                                            <option value="292">(GMT -06:00) Maumelle</option>
+                                            <option value="808">(GMT -06:00) Salt Lake City</option>
+                                            <option value="301">(GMT -06:00) Brandon</option>
+                                            <option value="302">(GMT -06:00) Grand Forks</option>
+                                            <option value="304">(GMT -06:00) New Orleans</option>
+                                            <option value="560">(GMT -06:00) Guatemala City</option>
+                                            <option value="321">(GMT -06:00) Jefferson City</option>
+                                            <option value="325">(GMT -06:00) Springfield</option>
+                                            <option value="837">(GMT -06:00) Sandy</option>
+                                            <option value="326">(GMT -06:00) Huntsville</option>
+                                            <option value="327">(GMT -06:00) Minot</option>
+                                            <option value="338">(GMT -06:00) Panama City</option>
+                                            <option value="341">(GMT -06:00) Mexico City</option>
+                                            <option value="92">(GMT -06:00) Calgary</option>
+                                            <option value="352">(GMT -06:00) Hillside</option>
+                                            <option value="357">(GMT -06:00) Minneapolis</option>
+                                            <option value="887">(GMT -06:00) Tegucigalpa</option>
+                                            <option value="634">(GMT -06:00) Junction</option>
+                                            <option value="668">(GMT -06:00) Roselle</option>
+                                            <option value="673">(GMT -06:00) Oklahoma City</option>
+                                            <option value="674">(GMT -06:00) Arlington Heights</option>
+                                            <option value="678">(GMT -06:00) Puerto Vallarta</option>
+                                            <option value="685">(GMT -06:00) Bartlett</option>
+                                            <option value="689">(GMT -06:00) Omaha</option>
+                                            <option value="203">(GMT -06:00) Regina</option>
+                                            <option value="462">(GMT -06:00) West Jordan</option>
+                                            <option value="222">(GMT -06:00) Texarkana</option>
+                                            <option value="225">(GMT -06:00) Vernon</option>
+                                            <option value="739">(GMT -06:00) Lubbock</option>
+                                            <option value="746">(GMT -06:00) Waxahachie</option>
+                                            <option value="491">(GMT -06:00) Alajuela</option>
+                                            <option value="752">(GMT -06:00) Metairie</option>
+                                            <option value="757">(GMT -06:00) Burnsville</option>
+                                            <option value="758">(GMT -06:00) Kansas City</option>
+                                            <option value="760">(GMT -06:00) Arlington</option>
+                                            <option value="513">(GMT -07:00) Eugene</option>
+                                            <option value="6">(GMT -07:00) Mountain Time (US &amp; Canada)</option>
+                                            <option value="524">(GMT -07:00) San Ramon</option>
+                                            <option value="538">(GMT -07:00) Fremont</option>
+                                            <option value="539">(GMT -07:00) Newport Beach</option>
+                                            <option value="545">(GMT -07:00) Tijuana</option>
+                                            <option value="290">(GMT -07:00) Edmonton</option>
+                                            <option value="809">(GMT -07:00) Claremont</option>
+                                            <option value="311">(GMT -07:00) Englewood</option>
+                                            <option value="582">(GMT -07:00) Oceanside</option>
+                                            <option value="342">(GMT -07:00) Flagstaff</option>
+                                            <option value="602">(GMT -07:00) Santa Clara</option>
+                                            <option value="347">(GMT -07:00) Gilbert</option>
+                                            <option value="860">(GMT -07:00) Tualatin</option>
+                                            <option value="606">(GMT -07:00) Lynwood</option>
+                                            <option value="867">(GMT -07:00) Monterey Park</option>
+                                            <option value="101">(GMT -07:00) Roseville</option>
+                                            <option value="358">(GMT -07:00) Denver</option>
+                                            <option value="879">(GMT -07:00) Scottsdale</option>
+                                            <option value="117">(GMT -07:00) Sun Valley</option>
+                                            <option value="124">(GMT -07:00) Oxnard</option>
+                                            <option value="126">(GMT -07:00) San Tan Valley</option>
+                                            <option value="895">(GMT -07:00) San Marcos</option>
+                                            <option value="386">(GMT -07:00) Glendale</option>
+                                            <option value="387">(GMT -07:00) Chatsworth</option>
+                                            <option value="909">(GMT -07:00) Canoga Park</option>
+                                            <option value="405">(GMT -07:00) San Francisco</option>
+                                            <option value="661">(GMT -07:00) Greeley</option>
+                                            <option value="665">(GMT -07:00) El Mirage</option>
+                                            <option value="161">(GMT -07:00) Calexico</option>
+                                            <option value="417">(GMT -07:00) Folsom</option>
+                                            <option value="164">(GMT -07:00) Las Vegas</option>
+                                            <option value="166">(GMT -07:00) Imperial Beach</option>
+                                            <option value="425">(GMT -07:00) Moreno Valley</option>
+                                            <option value="428">(GMT -07:00) Vancouver</option>
+                                            <option value="431">(GMT -07:00) Long Beach</option>
+                                            <option value="447">(GMT -07:00) Portland</option>
+                                            <option value="449">(GMT -07:00) New Westminster</option>
+                                            <option value="706">(GMT -07:00) Phoenix</option>
+                                            <option value="208">(GMT -07:00) Santa Barbara</option>
+                                            <option value="219">(GMT -07:00) Irvine</option>
+                                            <option value="744">(GMT -07:00) Aurora</option>
+                                            <option value="493">(GMT -07:00) Seattle</option>
+                                            <option value="498">(GMT -07:00) Alamo</option>
+                                            <option value="245">(GMT -07:00) Garden Valley</option>
+                                            <option value="506">(GMT -07:00) Cerritos</option>
+                                            <option value="763">(GMT -07:00) Loveland</option>
+                                            <option value="766">(GMT -07:00) Hinton</option>
+                                            <option value="5">(GMT -08:00) Pacific Time (US &amp; Canada)</option>
+                                            <option value="775">(GMT -08:00) La Puente</option>
+                                            <option value="279">(GMT -08:00) Fontana</option>
+                                            <option value="283">(GMT -08:00) Redding</option>
+                                            <option value="288">(GMT -08:00) San Diego</option>
+                                            <option value="291">(GMT -08:00) Los Angeles</option>
+                                            <option value="293">(GMT -08:00) Panorama City</option>
+                                            <option value="296">(GMT -08:00) Danville</option>
+                                            <option value="305">(GMT -08:00) Bainbridge Island</option>
+                                            <option value="310">(GMT -08:00) Rancho Cucamonga</option>
+                                            <option value="312">(GMT -08:00) San Jose</option>
+                                            <option value="313">(GMT -08:00) Colton</option>
+                                            <option value="314">(GMT -08:00) Coquitlam</option>
+                                            <option value="346">(GMT -08:00) Vancouver</option>
+                                            <option value="359">(GMT -08:00) Santa Ana</option>
+                                            <option value="361">(GMT -08:00) Kent</option>
+                                            <option value="367">(GMT -08:00) Morgan Hill</option>
+                                            <option value="401">(GMT -08:00) Anchorage</option>
+                                            <option value="657">(GMT -08:00) Encino</option>
+                                            <option value="659">(GMT -08:00) Malibu</option>
+                                            <option value="688">(GMT -08:00) Menifee</option>
+                                            <option value="733">(GMT -08:00) Spokane</option>
+                                            <option value="736">(GMT -08:00) Upland</option>
+                                            <option value="4">(GMT -09:00) Alaska</option>
+                                            <option value="3">(GMT -10:00) Hawaii</option>
+                                            <option value="392">(GMT -10:00) Honolulu</option>
+                                            <option value="1">(GMT -11:00) Midway Island</option>
+                                            <option value="2">(GMT -11:00) Samoa</option>
+                                    </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="col-md-s" style="text-align:right;">Date Format</th>
+                      <td>
+                        <input type="radio" name="date_formate" checked>dd-mm-yyyy<br>
+                        <input type="radio" name="date_formate">mm-dd-yyyy<br>
+                        <input type="radio" name="date_formate">yyyy-mm-dd
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col">
+                  <table>
+                    <tr>
+                      <th>Weekly Report</th>
+                      <td style="padding-left:20px;">
+                        <div class="custom-control custom-switch">
+                          <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                          <label class="custom-control-label" for="customSwitch1"></label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Report Day</th>
+                      <td>
+                        <select class="form-control" id="dayofweek" name="dayofweek">
+                          <option selected="" value="1">Monday</option>
+                          <option value="2">Tuesday</option>
+                          <option value="3">Wednesday</option>
+                          <option value="4">Thursday</option>
+                          <option value="5">Friday</option>
+                          <option value="6">Saturday</option>
+                          <option value="7">Sunday</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
