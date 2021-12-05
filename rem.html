@@ -12,15 +12,15 @@
   <body>
     <div class="container-fluid">
       <div class="row" style="background-color: #a3c2c2;"> 
-        <div class="col-2">
-          <a href="index.html"><img src="image/logo.jpg" width="150px"></a>
+        <div class="col-md-2">
+          <a href="dashboard.html"><img src="image/logo.jpg" width="150px"></a>
         </div>
-        <div class="col-2">
+        <div class="col-md-2">
           <form style="padding-top: 2rem;">
             <input type="text" placeholder="Quick Search">
           </form>
         </div>
-        <div class="col-3"></div>
+        <div class="col-md-3"></div>
         <div id="myModal" class="modal fade right">
             <div class="modal-dialog" align="center">
               <div class="modal-content">
@@ -35,13 +35,13 @@
               </div>
             </div>
           </div>
-        <div class="col-1" style="padding-top: 2rem;">
+        <div class="col-md-1" style="padding-top: 2rem;">
           <div class="btn-group" role="group" aria-label="Basic example">
             <button type="button" class="btn" onclick="location.href='rem.html'"><img src="image/plus.png" width="25px" data-toggle="tooltip" data-placement="bottom" title="New Reminder"></button>
             <button type="button" class="btn" data-toggle="modal" data-target="#myModal"><img src="image/bell_icon.png" width="25px" data-toggle="tooltip" data-placement="bottom" title="Show Notification"></button>
           </div>
         </div>
-        <div class="col-2" style="padding-top: 2rem;">
+        <div class="col-md-2" style="padding-top: 2rem;">
             <div class="dropdown">
               <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Default Company
@@ -217,7 +217,7 @@
               </div>
             </div>
           </div>
-        <div class="col-2" style="padding-top: 2rem;">
+        <div class="col-md-2" style="padding-top: 2rem;">
           <div class="dropdown">
             <button type="button" class="btn" style="color: white;" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <img class="rounded-circle" src="image/icon-user-default.png" width="25px">Dark Eagle
@@ -233,7 +233,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-2">
+        <div class="col-md-2">
           <table class="table table-hover" style="background-color:lightgray;">
               <tr onclick="location.href='dashboard.html'">
                 <th>Dashboard</th>
@@ -264,9 +264,9 @@
               </tr>
           </table>
         </div>
-        <div class="col">
+        <div class="col-md">
           <div class="row" style="padding-top:1em;">
-            <div class="col">
+            <div class="col-md">
               <img src="image/home.png" width="15px"> / settings
             </div>
           </div><hr>
@@ -293,51 +293,51 @@
             <div class="card-body">
               <h2 align="left">Default Reminders Frequency</h2><br>
               <div class="row">
-                <div class="col-1 form-group">
+                <div class="col-md-1 form-group">
                   <input type="text" class="form-control" name="" maxlength="2" value="1">
                 </div>
-                <div class="col-2 form-group">
+                <div class="col-md-2 form-group">
                   <select class="form-control" name="reminder[0][unit]">
                     <option value="day">day(s)</option>
                     <option value="week">week(s)</option>
                     <option value="month" selected="selected">month(s)</option>
                   </select>
                 </div>
-                <div class="col-2 form-group">
+                <div class="col-md-2 form-group">
                   <select class="form-control text-success" name="reminder[0][type]" onchange="this.className = this.className + this.options[this.selectedIndex].className">
                     <option value="1" class="form-control text-success" selected="selected">before expiration/due date</option>
                     <option value="2" class="form-control text-danger">after expiration/due date</option>
                   </select>
                 </div>
-                <div class="col-2 form-group">
-                  <select class="form-control" name="reminder[0][hour]" title="Notification Time">                    
-                    <option value="01">01:00 HRS</option>
-                    <option value="02">02:00 HRS</option>
-                    <option value="03">03:00 HRS</option>
-                    <option value="04">04:00 HRS</option>
-                    <option value="05">05:00 HRS</option>
-                    <option value="06">06:00 HRS</option>
-                    <option value="07">07:00 HRS</option>
-                    <option value="08">08:00 HRS</option>
-                    <option selected="selected" value="09">09:00 HRS</option>
-                    <option value="10">10:00 HRS</option>
-                    <option value="11">11:00 HRS</option>
-                    <option value="12">12:00 HRS</option>
-                    <option value="13">13:00 HRS</option>
-                    <option value="14">14:00 HRS</option>
-                    <option value="15">15:00 HRS</option>
-                    <option value="16">16:00 HRS</option>
-                    <option value="17">17:00 HRS</option>
-                    <option value="18">18:00 HRS</option>
-                    <option value="19">19:00 HRS</option>
-                    <option value="20">20:00 HRS</option>
-                    <option value="21">21:00 HRS</option>
-                    <option value="22">22:00 HRS</option>
-                    <option value="23">23:00 HRS</option>
-                    <option value="23">22:00 HRS</option>
+                <div class="col-md-2 form-group">
+                  <select class="form-control" name="reminder[0][hour]" title="Notification Time">
+                    <option value="00">0000 HRS</option>
+                    <option value="01">0100 HRS</option>
+                    <option value="02">0200 HRS</option>
+                    <option value="03">0300 HRS</option>
+                    <option value="04">0400 HRS</option>
+                    <option value="05">0500 HRS</option>
+                    <option value="06">0600 HRS</option>
+                    <option value="07">0700 HRS</option>
+                    <option value="08">0800 HRS</option>
+                    <option selected="selected" value="09">0900 HRS</option>
+                    <option value="10">1000 HRS</option>
+                    <option value="11">1100 HRS</option>
+                    <option value="12">1200 HRS</option>
+                    <option value="13">1300 HRS</option>
+                    <option value="14">1400 HRS</option>
+                    <option value="15">1500 HRS</option>
+                    <option value="16">1600 HRS</option>
+                    <option value="17">1700 HRS</option>
+                    <option value="18">1800 HRS</option>
+                    <option value="19">1900 HRS</option>
+                    <option value="20">2000 HRS</option>
+                    <option value="21">2100 HRS</option>
+                    <option value="22">2200 HRS</option>
+                    <option value="23">2300 HRS</option>
                   </select>
                 </div>
-                <div class="col-2 form-group">
+                <div class="col-md-2 form-group">
                   <select class="form-control" name="reminder[0][email_tid]" title="Select Email Template">
                     <option value="18270" selected="">Expiratoin Email Template</option>
                     <option value="18271">Due Date Email Template</option>
@@ -345,7 +345,7 @@
                     <option value="18273">Event Email Template</option>
                   </select>
                 </div>
-                <div class="col-2 form-group">
+                <div class="col-md-2 form-group">
                   <select class="form-control" name="reminder[0][sms_tid]" title="Select SMS Template">
                     <option value="6068" selected="">Expiration SMS Template</option>
                     <option value="6069">Due Date SMS Template</option>
@@ -353,58 +353,58 @@
                     <option value="6071">Event SMS Template</option>
                   </select>
                 </div>
-                <div class="col-1 form-group">
+                <div class="col-md-1 form-group">
                   <button class="btn btn-danger pull-left" type="button" title="delete">
                     <img src="image/delete.png" width="15px">
                   </button>
                 </div>
               </div>
               <div class="row">
-                <div class="col-1 form-group">
+                <div class="col-md-1 form-group">
                   <input type="text" class="form-control" name="" maxlength="2" value="2">
                 </div>
-                <div class="col-2 form-group">
+                <div class="col-md-2 form-group">
                   <select class="form-control" name="reminder[0][unit]">
                     <option value="day">day(s)</option>
                     <option value="week" selected="selected">week(s)</option>
                     <option value="month">month(s)</option>
                   </select>
                 </div>
-                <div class="col-2 form-group">
+                <div class="col-md-2 form-group">
                   <select class="form-control text-success" name="reminder[0][type]" onchange="this.className = this.className + this.options[this.selectedIndex].className">
                     <option value="1" class="form-control text-success" selected="selected">before expiration/due date</option>
                     <option value="2" class="form-control text-danger">after expiration/due date</option>
                   </select>
                 </div>
-                <div class="col-2 form-group">
-                  <select class="form-control" name="reminder[0][hour]" title="Notification Time">                    
-                    <option value="01">01:00 HRS</option>
-                    <option value="02">02:00 HRS</option>
-                    <option value="03">03:00 HRS</option>
-                    <option value="04">04:00 HRS</option>
-                    <option value="05">05:00 HRS</option>
-                    <option value="06">06:00 HRS</option>
-                    <option value="07">07:00 HRS</option>
-                    <option value="08">08:00 HRS</option>
-                    <option selected="selected" value="09">09:00 HRS</option>
-                    <option value="10">10:00 HRS</option>
-                    <option value="11">11:00 HRS</option>
-                    <option value="12">12:00 HRS</option>
-                    <option value="13">13:00 HRS</option>
-                    <option value="14">14:00 HRS</option>
-                    <option value="15">15:00 HRS</option>
-                    <option value="16">16:00 HRS</option>
-                    <option value="17">17:00 HRS</option>
-                    <option value="18">18:00 HRS</option>
-                    <option value="19">19:00 HRS</option>
-                    <option value="20">20:00 HRS</option>
-                    <option value="21">21:00 HRS</option>
-                    <option value="22">22:00 HRS</option>
-                    <option value="23">23:00 HRS</option>
-                    <option value="23">22:00 HRS</option>
+                <div class="col-md-2 form-group">
+                  <select class="form-control" name="reminder[0][hour]" title="Notification Time">
+                    <option value="00">0000 HRS</option>
+                    <option value="01">0100 HRS</option>
+                    <option value="02">0200 HRS</option>
+                    <option value="03">0300 HRS</option>
+                    <option value="04">0400 HRS</option>
+                    <option value="05">0500 HRS</option>
+                    <option value="06">0600 HRS</option>
+                    <option value="07">0700 HRS</option>
+                    <option value="08">0800 HRS</option>
+                    <option selected="selected" value="09">0900 HRS</option>
+                    <option value="10">1000 HRS</option>
+                    <option value="11">1100 HRS</option>
+                    <option value="12">1200 HRS</option>
+                    <option value="13">1300 HRS</option>
+                    <option value="14">1400 HRS</option>
+                    <option value="15">1500 HRS</option>
+                    <option value="16">1600 HRS</option>
+                    <option value="17">1700 HRS</option>
+                    <option value="18">1800 HRS</option>
+                    <option value="19">1900 HRS</option>
+                    <option value="20">2000 HRS</option>
+                    <option value="21">2100 HRS</option>
+                    <option value="22">2200 HRS</option>
+                    <option value="23">2300 HRS</option>
                   </select>
                 </div>
-                <div class="col-2 form-group">
+                <div class="col-md-2 form-group">
                   <select class="form-control" name="reminder[0][email_tid]" title="Select Email Template">
                     <option value="18270" selected="">Expiratoin Email Template</option>
                     <option value="18271">Due Date Email Template</option>
@@ -412,7 +412,7 @@
                     <option value="18273">Event Email Template</option>
                   </select>
                 </div>
-                <div class="col-2 form-group">
+                <div class="col-md-2 form-group">
                   <select class="form-control" name="reminder[0][sms_tid]" title="Select SMS Template">
                     <option value="6068" selected="">Expiration SMS Template</option>
                     <option value="6069">Due Date SMS Template</option>
@@ -420,58 +420,58 @@
                     <option value="6071">Event SMS Template</option>
                   </select>
                 </div>
-                <div class="col-1 form-group">
+                <div class="col-md-1 form-group">
                   <button class="btn btn-danger pull-left" type="button" title="delete">
                     <img src="image/delete.png" width="15px">
                   </button>
                 </div>
               </div>
               <div class="row">
-                <div class="col-1 form-group">
+                <div class="col-md-1 form-group">
                   <input type="text" class="form-control" name="" maxlength="2" value="3">
                 </div>
-                <div class="col-2 form-group">
+                <div class="col-md-2 form-group">
                   <select class="form-control" name="reminder[0][unit]">
                     <option value="day" selected="selected">day(s)</option>
                     <option value="week">week(s)</option>
                     <option value="month">month(s)</option>
                   </select>
                 </div>
-                <div class="col-2 form-group">
+                <div class="col-md-2 form-group">
                   <select class="form-control text-success" name="reminder[0][type]" onchange="this.className = this.className + this.options[this.selectedIndex].className">
                     <option value="1" class="form-control text-success" selected="selected">before expiration/due date</option>
                     <option value="2" class="form-control text-danger">after expiration/due date</option>
                   </select>
                 </div>
-                <div class="col-2 form-group">
-                  <select class="form-control" name="reminder[0][hour]" title="Notification Time">                    
-                    <option value="01">01:00 HRS</option>
-                    <option value="02">02:00 HRS</option>
-                    <option value="03">03:00 HRS</option>
-                    <option value="04">04:00 HRS</option>
-                    <option value="05">05:00 HRS</option>
-                    <option value="06">06:00 HRS</option>
-                    <option value="07">07:00 HRS</option>
-                    <option value="08">08:00 HRS</option>
-                    <option selected="selected" value="09">09:00 HRS</option>
-                    <option value="10">10:00 HRS</option>
-                    <option value="11">11:00 HRS</option>
-                    <option value="12">12:00 HRS</option>
-                    <option value="13">13:00 HRS</option>
-                    <option value="14">14:00 HRS</option>
-                    <option value="15">15:00 HRS</option>
-                    <option value="16">16:00 HRS</option>
-                    <option value="17">17:00 HRS</option>
-                    <option value="18">18:00 HRS</option>
-                    <option value="19">19:00 HRS</option>
-                    <option value="20">20:00 HRS</option>
-                    <option value="21">21:00 HRS</option>
-                    <option value="22">22:00 HRS</option>
-                    <option value="23">23:00 HRS</option>
-                    <option value="23">22:00 HRS</option>
+                <div class="col-md-2 form-group">
+                  <select class="form-control" name="reminder[0][hour]" title="Notification Time">
+                    <option value="00">0000 HRS</option>
+                    <option value="01">0100 HRS</option>
+                    <option value="02">0200 HRS</option>
+                    <option value="03">0300 HRS</option>
+                    <option value="04">0400 HRS</option>
+                    <option value="05">0500 HRS</option>
+                    <option value="06">0600 HRS</option>
+                    <option value="07">0700 HRS</option>
+                    <option value="08">0800 HRS</option>
+                    <option selected="selected" value="09">0900 HRS</option>
+                    <option value="10">1000 HRS</option>
+                    <option value="11">1100 HRS</option>
+                    <option value="12">1200 HRS</option>
+                    <option value="13">1300 HRS</option>
+                    <option value="14">1400 HRS</option>
+                    <option value="15">1500 HRS</option>
+                    <option value="16">1600 HRS</option>
+                    <option value="17">1700 HRS</option>
+                    <option value="18">1800 HRS</option>
+                    <option value="19">1900 HRS</option>
+                    <option value="20">2000 HRS</option>
+                    <option value="21">2100 HRS</option>
+                    <option value="22">2200 HRS</option>
+                    <option value="23">2300 HRS</option>
                   </select>
                 </div>
-                <div class="col-2 form-group">
+                <div class="col-md-2 form-group">
                   <select class="form-control" name="reminder[0][email_tid]" title="Select Email Template">
                     <option value="18270" selected="">Expiratoin Email Template</option>
                     <option value="18271">Due Date Email Template</option>
@@ -479,7 +479,7 @@
                     <option value="18273">Event Email Template</option>
                   </select>
                 </div>
-                <div class="col-2 form-group">
+                <div class="col-md-2 form-group">
                   <select class="form-control" name="reminder[0][sms_tid]" title="Select SMS Template">
                     <option value="6068" selected="">Expiration SMS Template</option>
                     <option value="6069">Due Date SMS Template</option>
@@ -487,7 +487,7 @@
                     <option value="6071">Event SMS Template</option>
                   </select>
                 </div>
-                <div class="col-1 form-group">
+                <div class="col-md-1 form-group">
                   <button class="btn btn-danger pull-left" type="button" title="delete">
                     <img src="image/delete.png" width="15px">
                   </button>
